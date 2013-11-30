@@ -1,0 +1,35 @@
+{
+  "uuid": "463e31d9-6399-420e-bb6e-4ef6bc95e699",
+  "shortName": "Hautomation",
+  "longName": "Hautomation",
+  "companyName": "S.MIZRAHI",
+  "versionCode": 1,
+  "versionLabel": "1.0.0",
+  "capabilities": [ "configurable" ],
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {
+    "sending":0,
+    "temperature": 1,
+    "conso":2,
+    "alarm":3,
+    "extTemperature":4,
+    "consoHp":5,
+    "error":6
+  },
+  "resources": {
+    "media": [
+      {
+        "type": "font",
+        "name": "FONT_AWESOME_18",
+        "file": "fonts/fontawesome-webfont.ttf"
+      },
+      {
+        "type": "font",
+        "name": "FONT_AWESOME_22",
+        "file": "fonts/fontawesome-webfont.ttf"
+      }
+    ]
+  }
+}

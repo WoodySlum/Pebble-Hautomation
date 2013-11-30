@@ -1,0 +1,31 @@
+<html>
+<head>
+
+</head>
+<body>
+	Settings :
+	<form>
+		<input type="text" id="username" placeholder="Username" /><br />
+		<input type="text" id="password" placeholder="Password" /><br /><br />
+		<a href="#" onclick="javascript:closeConfiguration();"> <strong>Save</strong> </a>
+	</form>
+	<script type="text/javascript">
+		function getUrlVars() {
+		    var vars = {};
+		    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+		        vars[key] = value;
+		    });
+		    return vars;
+		}
+
+		function closeConfiguration() {
+			var username = document.getElementById('username').value;
+			var password = document.getElementById('password').value;
+			window.location.href = "pebblejs://close#"+JSON.stringify({"user":username,"password":password});
+		}
+
+		document.getElementById("username").value = getUrlVars()["username"];
+		document.getElementById("password").value = getUrlVars()["password"];
+	</script>
+</body>
+</html>
